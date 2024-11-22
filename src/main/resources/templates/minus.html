@@ -12,24 +12,35 @@
 
 </head>
 
-<body>
+<br>
 
 	
 	<h1>引き算</h1>
 	
 	
 	
-	<from action = "calculationAnswer" method = "get" >
+	<br th:action="@{/calc}" method = "POST" th:object = "${form}">
 		
-		<input type = "number" name = "num1"> -
+		<input type = "text" th:field = "*{val1}"> +
+		<input type = "text" th:field = "*{val2}">
+		=<span th:text = "${ans}"></span>
+		<br/></br>
+		<input type = "submit" value = "計算">
 		
-		<input type = "number" name = "num2">
 		
-		<button type = "submit"> = </button>
+	</form>
+	
+<!--	<from action = "calculationAnswer" method = "get" >-->
 		
-		<p th:text = "${n1}"></p>
+<!--		<input type = "number" name = "num1"> --->
 		
-	</from>
+<!--		<input type = "number" name = "num2">-->
+		
+<!--		<button type = "submit"> = </button>-->
+		
+<!--		<p th:text = "${n1}"></p>-->
+		
+<!--	</from>-->
 	
 	
 	
