@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+<!--タイムリーフ（テンプレートエンジン）を使用できるようにする-->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>課題1</title>
+
+</head>
+
+<body>
+
+	<h1>掛け算の結果</h1>
+	
+<!--MulitiControllerのresultの結果を表示する( 「${___}」は変数やプロパティの値を表示する)-->
+	<p th:text = " ${ result } "></p>
+	
+	
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head xmlns:th = "http://www.thymeleaf.org" >
+
+	<meta charset="UTF-8">
+
+	<title>課題2</title>
+
+</head>
+
+<body>
+
+	<h1>FizzBuzz</h1>
+	
+	
+	<ul th:each = "element : ${ fbList }">
+		<li th:text = "${ element }"></li>
+	</ul>
+	
+	
+</body>
+
+</html>
